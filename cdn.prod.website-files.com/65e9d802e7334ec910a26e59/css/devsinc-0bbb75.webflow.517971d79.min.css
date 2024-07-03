@@ -3523,7 +3523,7 @@ h2 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: Inter, sans-serif;
-  font-size: 100px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 1.1em
 }
@@ -4715,8 +4715,7 @@ figure {
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
-  display: flex;
-  /* position: fixed */
+  display: flex
 }
 
 .blog-sidebar-item {
@@ -23113,15 +23112,3 @@ figure {
   font-style: normal;
   font-display: swap;
 }
-
-/* .anim{
-  opacity: 0;
-  transform: translateY(30px);
-  animation: moveup 0.5s linear forwards;
-}
-@keyframes moveup{
-  100%{
-    opacity: 1;
-    transform: translateY(0px);
-  }
-} */
