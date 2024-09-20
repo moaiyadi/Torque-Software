@@ -104,44 +104,4 @@
 
 
 
-    .services-link {
-        position: relative; /* Needed for absolute positioning of the dropdown */
-    }
-    
-    .services-dropdown {
-        display: none;
-        position: absolute;
-        top: 100%; /* Position right below the "Services" link */
-        left: 0;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        padding: 10px;
-        z-index: 100;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        width: 250px;
-    }
-
-    .services-link:hover .services-dropdown {
-        display: block; /* Show dropdown on hover */
-    }
-
-    .services-dropdown .service {
-        padding: 10px;
-        border-bottom: 1px solid #eee;
-    }
-
-    .services-dropdown .service:last-child {
-        border-bottom: none; /* Remove border for the last service */
-    }
-
-    .services-dropdown .service h3 {
-        margin: 0;
-        font-size: 16px;
-    }
-
-    .services-dropdown .service p {
-        font-size: 14px;
-        margin-top: 5px;
-        color: #666;
-    }
 
