@@ -69,13 +69,24 @@
       transform: translateX(-50%); /* Move left by half of the container (since it's duplicated) */
     }
   }
+  .company-logo{width: 140px;}
+  @media (max-width:500px) {
+    .company-logo{width: 70px;}
+  }
+  @media (max-width:770px) {
+        .contact-btn{display: none;}
+        .dropdown-mobile{margin-left: 70px; margin-top: -20px;}
+    }
+    @media (min-width:771px) {
+        .chat-mobile{display: none;}
+    }
     
   </style>
 </head>
 
 <body class="layout_layout__MEILQ" >
     <div style="z-index: 10001;" class="header_header__container__3N0Ku ">
-        <nav class="nav-test " style=" height: 90px; background-color: rgba(255, 255, 255, 0.9);">
+        <nav class="nav-test " style=" height: 90px;">
             <div class="logo-container-test"style="">
                 <a href="index.html"><img src="images/logo.png" alt="Logo" style="width: 100px; height: 50px;"></a>
             </div>
@@ -89,23 +100,24 @@
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="index.html">Home</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown">
                     <a href="#" class="active">Services</a>
-                    <ul class="dropdown">
-                        <li class="header_header__links__link__GHE7N nav-test-li " style="list-style: none;"><a href="frontenddevelopment.html">Front End Development</a></li>
-                        <li class="header_header__links__link__GHE7N nav-test-li " style="list-style: none;"><a href="webdevelopment.html" class="active">Web Development</a></li>
-                        <li class="header_header__links__link__GHE7N nav-test-li " style="list-style: none;" class="active"><a href="mobileappdevelopment.html">Mobile App Development</a></li>
+                    <ul class="dropdown dropdown-mobile">
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="frontenddevelopment.html">Front End Development</a></li>
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="webdevelopment.html" class="active">Web Development</a></li>
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="mobileappdevelopment.html">Mobile App Development</a></li>
                     </ul>
                 </li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="whyus.html">Why Us</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="pricing.html">Pricing</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="about.html">About Us</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="contact.html">Contact Us</a></li>
-                <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown" style="z-index: 12000;"></li>
+                <li class="nav-test-li chat-mobile"><a href="contact.html" class="chat-btn" style="display: block; background-color: #d8040c; color: #fff; padding: 15px 40px; font-size: 1.5rem; text-align: center; border-radius: 30px; box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);">Chat With Us</a></li>
             </ul>
-            <div class="animate__animated animate__fadeInRight">
-                <a href="contact.html" class="chat-btn" style="color: #fff; display: inline-block; width: 100%; max-width: 250px; height: auto; padding: 10px 20px; font-size: 1rem; text-align: center;  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                  Chat With Us</a>
-            </div>
-        </nav>
+            <div class="animate__animated animate__fadeInRight contact-btn" >
+                <a href="contact.html" class="chat-btn" style="display: block; background-color: #d8040c; color: #fff; padding: 15px 40px; font-size: 1.5rem; text-align: center; border-radius: 30px; box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);">
+                  Chat With Us
+                </a>
+              </div>
+         </nav>
     </div>
             <!-- video -->
             <div class="video-container block animate__animated" data-animation="animate__fadeIn" style="position: absolute; top: 0; left: 0;">
@@ -266,8 +278,8 @@
                                             </div>
                                 </div>                        </div>
                         <div>
-                            <h4 data-animation="animate__fadeInDown" class="block animate__animated our-values-section_values_list__title__sJ7Bn" style="font-size: 50px;"><strong>Technologies</strong></h4>
-                            <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl" style="font-size: 25px;">
+                            <h4 data-animation="animate__fadeInDown" class="block animate__animated our-values-section_values_list__title__sJ7Bn" style="font-size: 50px;text-align: center;"><strong>Technologies</strong></h4>
+                            <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl" style="font-size: 25px; text-align: center;">
                                 Languages & Frameworks:</p></div>
                                 <br><br>
                                 <div class="custom-container" style="width: 100%; overflow: hidden;">
@@ -280,16 +292,16 @@
                                             animation: scroll 30s linear infinite; /* Infinite scrolling */
                                           ">
                                             <!-- Logos (Duplicated for seamless effect) -->
-                                            <img src="images/php-2.png" loading="lazy" alt="logo" class="company-logo" style="width: 40%; margin-right: 20px;">
-                                            <img src="images/dotnet.png" loading="lazy" alt="" class="company-logo" style="width: 40%; margin-right: 20px;">
-                                            <img src="images/java-1.png" loading="lazy" alt="" class="company-logo" style="width: 40%; margin-right: 20px;">
-                                            <img src="images/python-1.png" loading="lazy" alt="" class="company-logo" style="width: 40%; margin-right: 20px;">
+                                            <img src="images/php-2.png" loading="lazy" alt="logo" class="company-logo" style=" margin-right: 20px;">
+                                            <img src="images/dotnet.png" loading="lazy" alt="" class="company-logo" style=" margin-right: 20px;">
+                                            <img src="images/java-1.png" loading="lazy" alt="" class="company-logo" style=" margin-right: 20px;">
+                                            <img src="images/python-1.png" loading="lazy" alt="" class="company-logo" style=" margin-right: 20px;">
                                             
                                             <!-- Duplicate logos to ensure a seamless scroll -->
-                                            <img src="images/php-2.png" loading="lazy" alt="logo" class="company-logo" style="width: 40%; margin-right: 20px;">
-                                            <img src="images/dotnet.png" loading="lazy" alt="" class="company-logo" style="width: 40%; margin-right: 20px;">
-                                            <img src="images/java-1.png" loading="lazy" alt="" class="company-logo" style="width: 40%; margin-right: 20px;">
-                                            <img src="images/python-1.png" loading="lazy" alt="" class="company-logo" style="width: 40%; margin-right: 20px;">
+                                            <img src="images/php-2.png" loading="lazy" alt="logo" class="company-logo" style=" margin-right: 20px;">
+                                            <img src="images/dotnet.png" loading="lazy" alt="" class="company-logo" style=" margin-right: 20px;">
+                                            <img src="images/java-1.png" loading="lazy" alt="" class="company-logo" style=" margin-right: 20px;">
+                                            <img src="images/python-1.png" loading="lazy" alt="" class="company-logo" style=" margin-right: 20px;">
                                           </div>
                                         </div>
                                       </div>
@@ -311,9 +323,13 @@
                                 <p>Your Next <strong>Great App</strong> Awaits</p>
                             </h2>
                             <p class="global-subtitle schedule-call_schedule_call__inner__subtitle__UV7R5 block animate__animated" data-animation="animate__bounceInLeft">Let's discuss how Torque Software can help bring your project to life.</p>
-                            <div class="schedule-call_schedule_call__inner__btn__hD2LL block animate__animated" data-animation="animate__bounceIn"><a href="contact.html"><button
-                                        class="button_button__LTUUI"><span>Schedule a Call Today</span></button></a></div>
-                        </div>
+                            <div class="schedule-call_schedule_call__inner__btn__hD2LL block animate__animated sm:text-center md:text-right lg:text-left" data-animation="animate__bounceIn">
+                                <a href="contact.html">
+                                    <button class="button_button__LTUUI py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300 btn-shedule-a-call" style="height: 60px;">
+                                        <span>Schedule a Call Today</span>
+                                    </button>
+                                </a>
+                            </div>                              
                     </div>
                 </section>
             </div>

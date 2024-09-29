@@ -34,12 +34,24 @@
       margin: 0 auto 20px !important;
     }
   }
+  @media (max-width:770px) {
+        .contact-btn{display: none;}
+        .dropdown-mobile{margin-left: 70px; margin-top: -20px;}
+    }
+    @media (min-width:771px) {
+        .chat-mobile{display: none;}
+    }
+    .design-margin{margin-top: -50px;}
+    @media (max-width:530px) {
+        .design-margin{margin-top: -200px;}
+    }
+
   </style>
 </head>
 
 <body class="layout_layout__MEILQ">
     <div style="z-index: 10001;" class="header_header__container__3N0Ku ">
-        <nav class="nav-test " style=" height: 90px; background-color: rgba(255, 255, 255, 0.9);">
+        <nav class="nav-test " style=" height: 90px;">
             <div class="logo-container-test"style="">
                 <a href="index.html"><img src="images/logo.png" alt="Logo" style="width: 100px; height: 50px;"></a>
             </div>
@@ -53,23 +65,24 @@
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="index.html">Home</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown">
                     <a href="#" class="active">Services</a>
-                    <ul class="dropdown">
-                        <li class="header_header__links__link__GHE7N nav-test-li " style="list-style: none;"><a href="frontenddevelopment.html" >Front End Development</a></li>
-                        <li class="header_header__links__link__GHE7N nav-test-li " style="list-style: none;"><a href="webdevelopment.html">Web Development</a></li>
-                        <li class="header_header__links__link__GHE7N nav-test-li " style="list-style: none;"><a href="mobileappdevelopment.html" class="active">Mobile App Development</a></li>
+                    <ul class="dropdown dropdown-mobile">
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="frontenddevelopment.html">Front End Development</a></li>
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="webdevelopment.html">Web Development</a></li>
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="mobileappdevelopment.html" class="active">Mobile App Development</a></li>
                     </ul>
                 </li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="whyus.html">Why Us</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="pricing.html">Pricing</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="about.html">About Us</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="contact.html">Contact Us</a></li>
-                <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown" style="z-index: 12000;"></li>
+                <li class="nav-test-li chat-mobile"><a href="contact.html" class="chat-btn" style="display: block; background-color: #d8040c; color: #fff; padding: 15px 40px; font-size: 1.5rem; text-align: center; border-radius: 30px; box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);">Chat With Us</a></li>
             </ul>
-            <div class="animate__animated animate__fadeInRight">
-                <a href="contact.html" class="chat-btn" style="color: #fff; display: inline-block; width: 100%; max-width: 250px; height: auto; padding: 10px 20px; font-size: 1rem; text-align: center;  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                  Chat With Us</a>
-            </div>
-        </nav>
+            <div class="animate__animated animate__fadeInRight contact-btn" >
+                <a href="contact.html" class="chat-btn" style="display: block; background-color: #d8040c; color: #fff; padding: 15px 40px; font-size: 1.5rem; text-align: center; border-radius: 30px; box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);">
+                  Chat With Us
+                </a>
+              </div>
+         </nav>
     </div>
     <main class="layout_layout__inner__Ln18k">
         <!-- video -->
@@ -110,15 +123,15 @@
                                 <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
                                   <div class="central-cloud" style="text-align: center;">
                                     <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__fadeInDown">
-                                      <p style="font-size: 24px; line-height: 1.5; margin-bottom: 20px;">
+                                      <p style="font-size: 34px;  margin-bottom: 20px;">
                                         Beautiful mobile apps for <strong>IOS</strong> and <strong>Android</strong>
                                       </p>
                                     </h2>
                       
                                     <!-- Logo Container -->
-                                    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin: 0 auto; max-width: 600px; flex-wrap: wrap;">
-                                      <img src="images/png-transparent-apple-logo.png" alt="Apple Logo" style="width: 45%; margin-bottom: 20px; flex: 1 1 auto;">
-                                      <img src="images/android-logo-0-.png" alt="Android Logo" style="width: 45%; margin-bottom: 20px; flex: 1 1 auto;">
+                                    <div style="display: flex; justify-content: space-between; align-items: center; margin: 0 auto; max-width: 600px; flex-wrap: wrap;">
+                                      <img src="images/apple-logo2.png" alt="Apple-android-Logo" class="Apple-android-Logo block animate__animated " data-animation="animate__flipInX" style="width: 20%;">
+                                      <img src="images/android-logo2.png" alt="Apple-android-Logo" class="Apple-android-Logo block animate__animated" data-animation="animate__flipInX" style="width: 20%;">
                                     </div>
                       
                                   </div>
@@ -130,7 +143,7 @@
                       </div>
                       
                     <!-- head -->
-                    <div style="background-image: url('images/ios-square-back2.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
+                    <div style="background-position: center; background-repeat: no-repeat; height: 100vh;">
                     <div class="info-secondary-section_info_secondary__container__t4gVs">
                         <div class="info-secondary-section_info_secondary__inner___HERp">
                             <!-- <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__fadeInDown" >
@@ -174,17 +187,16 @@
                     </div>
                 </section>
             </div>
-            <div class="about_about__valuesContainer__1wFcz block animate__animated" data-animation="animate__bounceIn" style="margin-top: -120px;"> 
-                <section class="global-container">
+                <section class="global-container design-margin">
                     <div class="our-values-section_our_values_section__7US1j">
                         <div class="our-values-section_values_list__zyn6C">
                             <div class="our-values-section_values_list__item__dv_1N" >
                                 <div class="our-values-section_values_list__icon__7toO3"><img alt="Communication"
                                         
                                         style="color:transparent" src="images/graphic-design.png" class="animate__animated block" data-animation="animate__flipInY"></div>
-                                <h4 class="our-values-section_values_list__title__sJ7Bn">Design
+                                <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown">Design
                                 </h4>
-                                <p class="our-values-section_values_list__description__cwHMl" style="text-align: left;">We design the first class apps that bring customers to your brand and keep them their for life.
+                                <p class="our-values-section_values_list__description__cwHMl block animate__animated" data-animation="animate__fadeInUp" style="text-align: left;">We design the first class apps that bring customers to your brand and keep them their for life.
                                 </p>
                                 <div class="global-subtitle info-secondary-section_info_secondary__inner__subtitle__8HjlE"></div>
                                     
@@ -192,16 +204,16 @@
                             <div class="our-values-section_values_list__item__dv_1N" >
                                 <div class="our-values-section_values_list__icon__7toO3"><img alt="User-Centered Focus"
                                         style="color:transparent" src="images/graphic-develop.png" class="block animate__animated" data-animation="animate__flipInY"></div>
-                                        <h4 class="our-values-section_values_list__title__sJ7Bn">Develop
+                                        <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown">Develop
                                         </h4>
-                                        <p class="our-values-section_values_list__description__cwHMl" style="text-align: left;">We develop sophisticated, highly functional apps that work for you, and work for your customers just as well.</p>                     
+                                        <p class="our-values-section_values_list__description__cwHMl block animate__animated" data-animation="animate__fadeInUp" style="text-align: left;">We develop sophisticated, highly functional apps that work for you, and work for your customers just as well.</p>                     
                                     </div>
                                     
                             <div class="our-values-section_values_list__item__dv_1N" >
                                 <div class="our-values-section_values_list__icon__7toO3"><img alt="Innovation"
                                          src="images/graphic-deliver.png" class="animate__animated block" data-animation="animate__flipInY"></div>
-                                         <h4 class="our-values-section_values_list__title__sJ7Bn">Deliver
-                                            <p class="our-values-section_values_list__description__cwHMl" style="text-align: left;">We’re there to help from inception to delivery and will get your app easily onto the marketplace.</p>
+                                         <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown">Deliver
+                                            <p class="our-values-section_values_list__description__cwHMl animate__animated block" data-animation="animate__fadeInUp" style="text-align: left;">We’re there to help from inception to delivery and will get your app easily onto the marketplace.</p>
                                             <div class="global-subtitle info-secondary-section_info_secondary__inner__subtitle__8HjlE"></div>
                         </div>
                     </div>
@@ -219,7 +231,7 @@
                         <section
                             class="global-header-width-container contact-hero-section_contact_hero_section__top__zT3rt">
 
-                            <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeIn">
+                            <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeInDown">
                                 <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU"><img
                                         alt="Schedule a timeslot" loading="lazy" width="40" height="40" decoding="async"
                                         data-nimg="1" style="color:transparent" src="images/graphic-native-1.png"></div>
@@ -230,7 +242,7 @@
                                 </div><button  onclick="window.location.href='contact.html';"
                                     class="contact-hero-section_contact_hero_section__item__btn__hYCHT">Read More</button>
                             </div>
-                            <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeIn">
+                            <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeInDown">
                                 <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU"><img
                                         alt="Write to us" loading="lazy" width="40" height="40" decoding="async"
                                         data-nimg="1" style="color:transparent" src="images/graphic-cross-1.png"></div>
@@ -250,7 +262,7 @@
                         <section
                             class="global-header-width-container contact-hero-section_contact_hero_section__top__zT3rt">
 
-                            <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeIn">
+                            <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeInDown">
                                 <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU"><img
                                         alt="Schedule a timeslot" loading="lazy" width="40" height="40" decoding="async"
                                         data-nimg="1" style="color:transparent" src="images/graphic-native-2.png"></div>
@@ -262,7 +274,7 @@
                                 </div><button onclick="window.location.href='contact.html';"
                                     class="contact-hero-section_contact_hero_section__item__btn__hYCHT">Read More</button>
                             </div>
-                            <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeIn">
+                            <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeInDown">
                                 <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU"><img
                                         alt="Write to us" loading="lazy" width="40" height="40" decoding="async"
                                         data-nimg="1" style="color:transparent" src="images/graphic-cross-2.png"></div>
@@ -279,7 +291,6 @@
                 </div>
             </section>
             <br>
-        </div>     
             <div class="about_about__callContainer__mtc7C" >
                 <section class="schedule-call_schedule_call__T0597">
                     <div class="schedule-call_schedule_call__container___cogb">
@@ -290,9 +301,13 @@
                                 <p>Your Next <strong>Great App</strong> Awaits</p>
                             </h2>
                             <p class="global-subtitle schedule-call_schedule_call__inner__subtitle__UV7R5 block animate__animated" data-animation="animate__bounceInLeft">Let's discuss how Torque Software can help bring your project to life.</p>
-                            <div class="schedule-call_schedule_call__inner__btn__hD2LL block animate__animated" data-animation="animate__bounceIn"><a href="contact.html"><button
-                                        class="button_button__LTUUI"><span>Schedule a Call Today</span></button></a></div>
-                        </div>
+                            <div class="schedule-call_schedule_call__inner__btn__hD2LL block animate__animated sm:text-center md:text-right lg:text-left" data-animation="animate__bounceIn">
+                                <a href="contact.html">
+                                    <button class="button_button__LTUUI py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300 btn-shedule-a-call" style="height: 60px;">
+                                        <span>Schedule a Call Today</span>
+                                    </button>
+                                </a>
+                            </div>                                                         
                     </div>
                 </section>
             </div>
